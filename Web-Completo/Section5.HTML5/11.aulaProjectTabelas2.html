@@ -1,0 +1,61 @@
+<!-- Tabelas, falando um pouco mais sobre!
+
+Apenas pressionando "!" e "ENTER" no teclado o doctype é gerado:
+
+-->
+
+<!DOCTYPE html>
+<!-- Tipo de documento. -->
+
+<html lang="pt-BR">
+  <!-- sempre fechar e abrir tag <html> e claro, fechar </html> -->
+
+  <head>
+    <!-- Informações que não aparecem em si na página diretamente. -->
+    <meta charset="UTF-8" />
+    <!-- UTF-8 é o padrão! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas 2 </title>
+    <!-- Título da página (ao lado do favcon) -->
+  </head>
+  <body>
+    <table border="2px" width="60%"> <!-- se deixar o width em 100% a tabela ocupará toda a tela disponível no seu navegador! -->
+      <!-- Table, tag criada para dar inicio de uma tabela -->
+
+      <tr align="center">
+        <th>Modelo do carro</th> <!-- Table Header, título de uma tabela -->
+        <th>Marca</th>
+        <th>Preço</th>
+        <th>Foto</th> 
+        <th>Extensão de coluna</th>
+      </tr>
+      <tr>        <!-- Table Row, linha da tabela -->
+        <td>Ferrari FXX-K EVO</td> <!-- Table data, o que vai estar na tabela -->
+        <td>Ferrari</td>
+        <td>$2.560.700</td>
+        <td colspan="2"><img src="Imagens/Aula 11/ferrari.jpg" width="200px"></td> <!-- colspan, permite que você use um conteudo de linha em duas colunas da tabela "2" diz que eu quero ocupar 2 colunas -->
+      </tr>
+      <tr>
+        <td>Pagani C10</td>
+        <td>Pagani</td>
+        <td>$3.000.000</td>
+        <td colspan="2"><img src="Imagens/Aula 11/pagani.jpg" width="200px"></td>
+      </tr>
+      <tr>
+        <td colspan="2">Preço do total</td>
+        <td>$5,560,700</td>
+      </tr>
+      <tr>
+        <td rowspan="2" colspan="2">Deconto</td>
+        <td>Cupom Ferrari - $90,000</td>
+      </tr>
+      <tr>
+        <td>Cupom Pagani - $130,000</td>
+      </tr>
+      <tr>
+        <td colspan="2">Preço Final</td>
+        <td>$5,340,700</td>
+      </tr>
+    </table>
+  </body>
+</html>
